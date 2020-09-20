@@ -1,0 +1,30 @@
+{
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rollup -c",
+    "client-dev": "rollup -c -w",
+    "start": "sirv public -s",
+    "server-dev": "cd .. && yarn run dev",
+    "dev": "concurrently \"yarn run server-dev\" \"yarn run client-dev\""
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "concurrently": "^5.3.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^6.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0"
+  },
+  "dependencies": {
+    "apollo-boost": "^0.4.9",
+    "graphql": "^15.3.0",
+    "moment": "^2.28.0",
+    "page": "^1.11.6",
+    "sirv-cli": "^1.0.0",
+    "svelte-apollo": "^0.3.0",
+    "svelte-toast": "^1.0.0"
+  }
+}
